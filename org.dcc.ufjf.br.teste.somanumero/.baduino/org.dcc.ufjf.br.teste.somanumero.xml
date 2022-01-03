@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="org.dcc.ufjf.br.teste.somanumero">
+    <baduino>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero/.baduino</baduino>
+    <classes>
+        <class>org.dcc.ufjf.br.somanumero.SomaNumeroTest</class>
+        <class>org.dcc.ufjf.br.somanumero.SomaNumero</class>
+    </classes>
+    <classes-path>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero/bin</classes-path>
+    <coverage-bin>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero/.baduino/coverage.ser</coverage-bin>
+    <coverage-xml>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero/.baduino/coverage.xml</coverage-xml>
+    <location>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero</location>
+    <path>/home/marcelo/repos/dcc168/org.dcc.ufjf.br.teste.somanumero/.baduino/org.dcc.ufjf.br.teste.somanumero.xml</path>
+</model>
