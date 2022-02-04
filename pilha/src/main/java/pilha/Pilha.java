@@ -5,8 +5,10 @@ import java.util.Stack;
 public class Pilha {
     int size;
     Stack<String> stack;
+    String result;
 
     public Pilha(int size) {
+        result = "";
         this.size = size;
         stack = new Stack<String>();
     }
@@ -20,12 +22,19 @@ public class Pilha {
         }
     }
 
-    public void stack_pop() {
-        String element = stack.pop();
-        System.out.println(element + " removido");
+    public String stack_pop() {
+        if(!stack.isEmpty()) {
+            String element = stack.pop();
+            System.out.println(element + " removido");
+            return element;
+        }
+        else {
+            System.out.println("Pilha vazia");
+            return "";
+        }
     }
 
-    public void stack_verify(String element) {
+    public Integer stack_verify(String element) {
         Integer position = (Integer) stack.search(element);
         if(position == -1) {
             System.out.println("Item não encontrado na pilha");
@@ -33,9 +42,19 @@ public class Pilha {
         else {
             System.out.println("Elemento na posição: " + position);
         }
+        return position;
     }
 
-    public void stack_print() {
-        stack.forEach(System.out::println);
+    public String stack_print() {
+        int i = 0;
+        for(String element : stack) {
+            if(i == stack.size() - 1)
+                result += element;
+            else
+                result += element + "\n";
+        i++;
+        }
+
+        return result;
     }
 }
